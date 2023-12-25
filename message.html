@@ -22,7 +22,7 @@
 </head>
 <body>
     <div class="pre-love-note">
-        <code id="pressC">Hold "C" to tear!</code>
+        <code id="pressC">Press "C" to tear!</code>
         </div>
     <div class="container">
        
@@ -37,7 +37,7 @@
         document.onkeydown = function(e) {
           if (e.key === 'c' || e.key === 'C') {
             pressC.style.backgroundColor = "yellow";
-            pressC.textContent = "Tear by moving the mouse through the poem...";
+            pressC.textContent = "While pressing 'C' move the mouse through the poem...";
           }
         };
       

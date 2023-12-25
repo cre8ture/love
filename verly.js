@@ -348,7 +348,7 @@ class Verly {
         console.log("i am new stick count!",cloth.sticks.length)
         this.stickCount = cloth.sticks.length;
         if(this.stickCount < 1110){
-            window.location.href = '/final.html';
+                window.location.href = window.location.origin + '/final.html';
         }
       }
 
