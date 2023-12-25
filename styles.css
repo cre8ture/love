@@ -1,0 +1,40 @@
+
+.container {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2em;
+}
+
+.end-message, .end-message2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+    #pressC{
+        padding: 10px;
+    }
+  @keyframes fadeInOut {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+  }

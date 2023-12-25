@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloth Simulation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- <script src="app.js"></script> Your JavaScript file -->
+    <script src="vector.js"></script> <!-- Your JavaScript file -->
+    <script src="point.js"></script> <!-- Your JavaScript file -->
+    <script src="charpoint.js"></script> <!-- Your JavaScript file -->
+    <script src="stick.js"></script> <!-- Your JavaScript file -->
+
+    <!-- <script src="verlet.js"></script> Your JavaScript file -->
+    <script src="mouse.js"></script> <!-- Your JavaScript file -->
+
+    <script src="entity.js"></script> <!-- Your JavaScript file -->
+    <script src="verly.js"></script> <!-- Your JavaScript file -->
+
+<link rel="stylesheet" href="styles.css">    
+
+
+</head>
+<body>
+    <div class="pre-love-note">
+        <code id="pressC">Hold "C" to tear!</code>
+        </div>
+    <div class="container">
+       
+    <canvas id="c">
+
+    </canvas>
+    </div>
+    <script src="make_message.js"></script>
+    <script>
+        let pressC = document.getElementById('pressC'); // Assuming 'pressC' is the id of your element
+      
+        document.onkeydown = function(e) {
+          if (e.key === 'c' || e.key === 'C') {
+            pressC.style.backgroundColor = "yellow";
+            pressC.textContent = "Tear by moving the mouse through the poem...";
+          }
+        };
+      
+        document.onkeyup = function(e) {
+          if (e.key === 'c' || e.key === 'C') {
+            pressC.style.backgroundColor = "white";
+            pressC.textContent = "Press 'C' to tear!";
+          }
+        };
+      </script>
+  
+</body>
+</html>
