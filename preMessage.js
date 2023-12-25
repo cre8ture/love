@@ -54,7 +54,7 @@ window.onload = function () {
                     message.remove();
                     showMessage(index + 1);
                 });
-            }, 5000); // Time the message stays visible
+            }, 3000); // Time the message stays visible
         });
     }
 
